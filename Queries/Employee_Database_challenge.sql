@@ -1,3 +1,37 @@
+DROP TABLE current_staff_list;
+DROP TABLE employee_titles;
+
+-- Get a list of current employees for PH
+SELECT DISTINCT ON (emp_no) e.emp_no, 
+	e.first_name, 
+	e.last_name,
+	e.birth_date,
+	de.from_date,
+	de.to_date,
+	t.title
+INTO current_staff_list
+FROM employees as e
+INNER JOIN dept_empl as de
+ON (e.emp_no = de.emp_no)
+INNER JOIN titles as t
+ON (e.emp_no = t.emp_no)
+WHERE (de.to_date = '9999-01-01')
+ORDER BY e.emp_no;
+
+--Show the data
+SELECT * FROM current_staff_list
+
+-- Get a total count of employees by title
+SELECT COUNT (emp_no), title
+INTO employee_titles
+FROM current_staff_list as cs
+GROUP BY cs.title
+ORDER BY count DESC;
+
+-- Show the data
+SELECT * FROM employee_titles;
+
+DROP retirement_titles;
 -- Titles of retiring employees
 SELECT e.emp_no, 
 	e.first_name, 
@@ -38,6 +72,7 @@ ORDER BY count DESC;
 --Show the data
 SELECT * FROM retiring_titles;
 
+DROP TABLE mentorship_eligibility;
 -- Get list of eligible mentorship employees
 SELECT DISTINCT ON (emp_no) e.emp_no, 
 	e.first_name, 
@@ -58,7 +93,7 @@ ORDER BY e.emp_no;
 
 --Show the data
 SELECT * FROM mentorship_eligibility;
-
+DROP TABLE mentorship_titles;
 --Show the count of elibible employees for mentorship by title
 SELECT COUNT (emp_no), title
 INTO mentorship_titles
@@ -68,3 +103,35 @@ ORDER BY count DESC;
 
 --Show the data
 SELECT * FROM mentorship_titles;
+
+DROP TABLE retirement_titles_current;
+ -- Titles of retiring employees currently working
+SELECT DISTINCT ON (emp_no) e.emp_no, 
+	e.first_name, 
+	e.last_name,
+	t.title,
+	de.from_date,
+	de.to_date
+INTO retirement_titles_current
+FROM employees as e
+INNER JOIN dept_empl as de
+on (e.emp_no = de.emp_no)
+INNER JOIN titles as t
+ON (e.emp_no = t.emp_no)
+WHERE (birth_date BETWEEN '1952-01-01' AND '1955-12-31')
+AND (de.to_date = '9999-01-01')
+ORDER BY e.emp_no;
+
+--Show the data
+SELECT * FROM retirement_titles_current;
+DROP TABLE retirement_current_titles;
+--Show the count of employees currently working that
+--are eligible for retirement by title
+SELECT COUNT (emp_no), title
+INTO retirement_current_titles
+FROM retirement_titles_current as rt
+GROUP BY rt.title
+ORDER BY count DESC;
+
+--Show the data
+SELECT * FROM retirement_current_titles;
