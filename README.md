@@ -8,7 +8,7 @@ To aid the HR department and senior management of Pewlett Hackard (PH), this pro
 
 To analyze the employee data to determine the number of retirement eligible employees and mentor candidates for PH, the data was parsed using postgreSQL organize the data sets presented and allow queries on the datasets to be completed to extract the pertinent data. For this analysis it was important to separate the employees by the criteria that indicates that they are eligible for retirement to determine the number of employees that are expected to retire soon and the employees that were eligible to become mentors, both based on their age and title. This data was organized within the database according to the entity relationship diagram (ERD) shown below:
 
-<img src="Resources/PH_ERD_Staffing.png" width="600" height="400">
+<img src="Resources/EmployeeDB.png" width="600" height="400">
 
 1. Retirement Candidates
   - To determent the candidates eligible for retirement, all employees within the company were selected that had a birthdate in the years between 1952-1955.  This created a table containing all employee in this range along with their title and start and to date. This table makes it possible to do further analysis within this group of employees.   
