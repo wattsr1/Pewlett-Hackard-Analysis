@@ -64,7 +64,7 @@ Based on this analysis it is evident that there is a significant number of emplo
 |:-------------------------:|:-------------------------:|:-------------------------:|
 | ![Total Retirement](/Resources/total_current_retirement_eligible_by_title.png "Total Retirement Age Employees") |  ![Total Staff](/Resources/total_staff_by_title.png "Total Employees") | ![Total Extended Mentorship](/Resources/extended_mentorship_eligibility_by_title.png "Total Mentorship Eligible Employees") |
 
-<img src="/Resources/PH_staffing_analysis_current_retirement_mentorship.png" width="600" height="600">
+<img src="/Resources/PH_staffing_analysis_current_retirement_ext_mentorship.png" width="600" height="600">
 
 With this larger group of eligible mentors, the impact of the retirement of senior staff could be reduced which will could have a positive impact on the productivity moving forward.
 
