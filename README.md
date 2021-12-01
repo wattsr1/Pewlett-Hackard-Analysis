@@ -6,7 +6,7 @@ To aid the HR department and senior management of Pewlett Hackard (PH), this pro
 ---
 ## Results
 
-To analyze the employee data to determine the number of retirement eligible employees and mentor candidates for PH, the data was parsed using postgreSQL organize the data sets presented and allow queries on the datasets to be completed to extract the pertinent data. For this analysis it was important to separate the employees by the criteria that indicates that they are eligible for retirement to determine the number of employees that are expected to retire soon and the employees that were eligible to become mentors, both based on their age and title. This data was organized within the database according to the entity relationship diagram (ERD) shown below:
+To analyze the employee data to determine the number of retirement eligible employees and mentor candidates for PH, the data was parsed using [queries](/Queries/Employee_Database_challenge.sql) in postgreSQL organize the data sets presented and allow queries on the datasets to be completed to extract the pertinent data. For this analysis it was important to separate the employees by the criteria that indicates that they are eligible for retirement to determine the number of employees that are expected to retire soon and the employees that were eligible to become mentors, both based on their age and title. This data was organized within the database according to the entity relationship diagram (ERD) shown below:
 
 <img src="Resources/EmployeeDB.png" width="600" height="400">
 
@@ -39,7 +39,7 @@ To analyze the employee data to determine the number of retirement eligible empl
 
 ### Additional Analysis
 
-To create a clearer view of the situation within the company, visualizations of the date collected were created using JuypterLab and matplotlib to create graphs showing the number of employees in all three groups: current employees, retirement eligible, and mentorship eligible.  This allows for a clear visualization of the large volume of retirement eligible employees within this group and the low number of eligible mentors.
+To create a clearer view of the situation within the company, [code](/Data/Data_analysis/PH_retirement_mentorship_analysis.ipynb) was developed for the visualization of the date collected using JuypterLab and matplotlib to create graphs showing the number of employees in all three groups: current employees, retirement eligible, and mentorship eligible.  This allows for a clear visualization of the large volume of retirement eligible employees within this group and the low number of eligible mentors.
 
 
 <img src="/Resources/PH_staffing_analysis_retirement_mentorship_initial.png" width="600" height="600">
