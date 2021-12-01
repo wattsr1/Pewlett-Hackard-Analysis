@@ -42,7 +42,7 @@ To analyze the employee data to determine the number of retirement eligible empl
 To create a clearer view of the situation within the company, visualizations of the date collected were created using JuypterLab and matplotlib to create graphs showing the number of employees in all three groups: current employees, retirement eligible, and mentorship eligible.  This allows for a clear visualization of the large volume of retirement eligible employees within this group and the low number of eligible mentors.
 
 
-<img src="PH_staffing_analysis_retirement_mentorship_initial.png" width="600" height="400">
+<img src="/Resources/PH_staffing_analysis_retirement_mentorship_initial.png" width="600" height="600">
 
 
 Looking at the graph and tables created for this analysis, there were some anomalies observed based on the initial selection protocol for the selection of retirement eligible employees. In the first two tables we can see that the group of senior staff within the selection group that is eligible for retirement is greater than the total number of current employees in this role.  Looking at the analysis it was evident that the list of data contained employees that have a to date that was before the current date.  This could indicate that these employees are already retired or have left the company.  To remedy this another analysis was completed which only included active employees.
@@ -53,9 +53,9 @@ After completing the new analysis new tables containing the revised number of re
 |:-------------------------:|:-------------------------:|:-------------------------:|
 | ![Total Retirement](/Resources/total_current_retirement_eligible_by_title.png "Total Retirement Age Employees") |  ![Total Staff](/Resources/total_staff_by_title.png "Total Employees") | ![Total Mentorship](/Resources/mentorship_eligibility_by_title.png "Total Mentorship Eligible Employees") |
 
-<img src="PH_staffing_analysis_current_retirement_mentorship.png" width="600" height="400">
+<img src="/Resources/PH_staffing_analysis_current_retirement_mentorship.png" width="600" height="600">
 
---
+---
 
 ## Summary
 Based on this analysis it is evident that there is a significant number of employees eligible for retirement in the senior staffing group. This will place a large burden on the younger staff to meet the needs of these positions as the individuals leave these roles.  To ensure that there is a smooth transition it is important that their an adequate number of senior staff that can act as mentors for the younger staff and train them to adequately manage the roles that will come available in the future.  Based on the current criteria for eligibility for the mentorship program the number of mentors is greatly lower than the number of potential retirees.  As the selection is based on the birthdate of the employee a possible remedy to this issue is to broaden this criterion to increase the number of potential mentors from this group.  To illustrate this the selection criteria for mentors was increased to include employees with birthdates between 1963 to 1965.  The analysis was completed with these new parameters which reduced the discrepancy between the number of eligible retirees and the eligible mentors.  This is illustrated in the tables and chart below.
@@ -64,9 +64,10 @@ Based on this analysis it is evident that there is a significant number of emplo
 |:-------------------------:|:-------------------------:|:-------------------------:|
 | ![Total Retirement](/Resources/total_current_retirement_eligible_by_title.png "Total Retirement Age Employees") |  ![Total Staff](/Resources/total_staff_by_title.png "Total Employees") | ![Total Extended Mentorship](/Resources/extended_mentorship_eligibility_by_title.png "Total Mentorship Eligible Employees") |
 
-<img src="PH_staffing_analysis_current_retirement_mentorship.png" width="600" height="400">
+<img src="/Resources/PH_staffing_analysis_current_retirement_mentorship.png" width="600" height="600">
 
 With this larger group of eligible mentors, the impact of the retirement of senior staff could be reduced which will could have a positive impact on the productivity moving forward.
 
---
+---
+
 
