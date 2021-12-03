@@ -66,7 +66,7 @@ Based on this analysis it is evident that there is a significant number of emplo
 
 <img src="/Resources/PH_staffing_analysis_current_retirement_ext_mentorship.png" width="600" height="600">
 
-With this larger group of eligible mentors, the impact of the retirement of senior staff could be reduced which will could have a positive impact on the productivity moving forward.
+With this larger group of eligible mentors, the impact of the retirement of senior staff could be reduced which will could have a positive impact on the productivity moving forward. Additional information that may of interest to do further analysis on is on the other group of employees that are not in the retirement range to determine the number of employees by title and determine if there is adequate numbers of employees from each group to fill potential roles as needed in the future.
 
 ---
 
